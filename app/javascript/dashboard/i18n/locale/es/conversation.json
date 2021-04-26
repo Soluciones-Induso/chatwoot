@@ -11,7 +11,7 @@
       "TITLE": "Buscar mensajes",
       "LOADING_MESSAGE": "Cruzando datos...",
       "PLACEHOLDER": "Escriba cualquier texto para buscar mensajes",
-      "NO_MATCHING_RESULTS": "No results found."
+      "NO_MATCHING_RESULTS": "No se han encontrado resultados."
     },
     "UNREAD_MESSAGES": "Mensajes no leídos",
     "UNREAD_MESSAGE": "Mensaje sin leer",
@@ -40,7 +40,7 @@
       "OPEN_BOT": "Abrir con bot"
     },
     "FOOTER": {
-      "MSG_INPUT": "Shift + enter for new line. Comience con '/' para seleccionar una respuesta predefinida.",
+      "MSG_INPUT": "Shift + Enter para nueva línea. Comience con '/' para seleccionar una respuesta predefinida.",
       "PRIVATE_MSG_INPUT": "Mayús + entrar para una nueva línea. Esto será visible sólo para los agentes"
     },
     "REPLYBOX": {
