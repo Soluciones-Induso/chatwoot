@@ -52,7 +52,7 @@ export default {
 
 .contact--panel {
   @include border-normal-left;
-
+  background: aliceblue;
   background: white;
   font-size: var(--font-size-small);
   overflow-y: auto;

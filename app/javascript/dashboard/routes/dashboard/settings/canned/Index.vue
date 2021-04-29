@@ -23,8 +23,7 @@
 
         <table
           v-if="!uiFlags.fetchingList && records.length"
-          class="woot-table"
-        >
+          class="woot-table" style="background: aliceblue;border-radius: 10px;">
           <thead>
             <!-- Header -->
             <th

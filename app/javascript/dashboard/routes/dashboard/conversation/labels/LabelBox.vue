@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-conversation--panel sidebar-labels-wrap">
+  <div class="contact-conversation--panel sidebar-labels-wrap" style="background: lightsteelblue; border-radius: 30px; margin-bottom: 8px; box-shadow: inset 0 0px 1px 1px rgb(0 0 0 / 12%), 0 20px 27px 0 rgb(0 0 0 / 5%);">
     <div
       v-if="!conversationUiFlags.isFetching"
       class="contact-conversation--list"

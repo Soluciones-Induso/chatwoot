@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts-page row">
+  <div class="contacts-page row" style="background: aliceblue;">
     <div class="left-wrap" :class="wrapClas">
       <contacts-header
         :search-query="searchQuery"

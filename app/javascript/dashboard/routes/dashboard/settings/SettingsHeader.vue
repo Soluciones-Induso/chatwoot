@@ -1,5 +1,5 @@
 <template>
-  <div class="settings-header">
+  <div class="settings-header" style="background: aliceblue;">
     <h1 class="page-title">
       <woot-sidemenu-icon></woot-sidemenu-icon>
       <back-button v-if="showBackButton" :back-url="backUrl"></back-button>

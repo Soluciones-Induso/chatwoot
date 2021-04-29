@@ -89,6 +89,7 @@ export default {
     border-radius: 0;
     height: 100%;
     width: 48rem;
+    background: aliceblue;
   }
 }
 </style>

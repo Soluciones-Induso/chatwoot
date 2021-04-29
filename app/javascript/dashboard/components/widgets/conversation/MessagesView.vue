@@ -47,7 +47,7 @@
         <i v-tooltip="$t('CONVERSATION.REMOVE_SELECTION')" class="ion-close" />
       </button>
     </div>
-    <ul class="conversation-panel">
+    <ul class="conversation-panel" style="background: #f2f3f778;">
       <transition name="slide-up">
         <li class="spinner--container">
           <span v-if="shouldShowSpinner" class="spinner message" />
@@ -83,7 +83,7 @@
           <img
             class="gif"
             src="~dashboard/assets/images/typing.gif"
-            alt="Someone is typing"
+            alt="Alguien esta escribiendo"
           />
         </div>
       </div>

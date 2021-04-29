@@ -30,6 +30,44 @@
       class="header-actions-wrap"
       :class="{ 'has-open-sidebar': isContactPanelOpen }"
     >
+      <template>
+        <div class="contact-conversation--panel sidebar-labels-wrap" style="background: lightsteelblue; border-radius: 30px; box-shadow: inset 0 0px 1px 1px rgb(0 0 0 / 12%), 0 20px 27px 0 rgb(0 0 0 / 5%);">
+          <div
+            v-if="!conversationUiFlags.isFetching"
+            class="contact-conversation--list"
+          >
+            <contact-details-item
+              :title="$t('CONTACT_PANEL.LABELS.TITLE')"
+              icon="ion-pricetags"
+              emoji="🏷️"
+              :show-edit="true"
+              @edit="onEdit"
+            />
+            <div class="label-wrap">
+              <woot-label
+                v-for="label in activeLabels"
+                :key="label.id"
+                :title="label.title"
+                :description="label.description"
+                :bg-color="label.color"
+              />
+              <div v-if="!activeLabels.length" class="no-label-message">
+                <span>{{ $t('CONTACT_PANEL.LABELS.NO_AVAILABLE_LABELS') }}</span>
+              </div>
+            </div>
+            <add-label-to-conversation
+              v-if="isEditing"
+              :conversation-id="conversationId"
+              :account-labels="accountLabels"
+              :saved-labels="savedLabels"
+              :show.sync="isEditing"
+              :on-close="closeEditModal"
+              :update-labels="onUpdateLabels"
+            />
+          </div>
+          <spinner v-else></spinner>
+        </div>
+      </template>
       <div class="multiselect-box multiselect-wrap--small">
         <i class="icon ion-headphone" />
         <multiselect
@@ -162,6 +200,36 @@ export default {
     margin-right: var(--space-small);
     min-width: 0;
     flex-shrink: 0;
+  }
+}
+
+.conv-details--item {
+  padding-bottom: var(--space-normal);
+
+  .conv-details--item__label {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-smaller);
+
+    .edit-button {
+      padding: 0; 
+    }
+  }
+
+  .conv-details--item__value {
+    word-break: break-all;
+    margin-left: var(--space-medium);
+  }
+
+  .title--icon .icon--emoji,
+  .title--icon .icon--font {
+    margin-right: var(--space-small);
+  }
+
+  .title--icon {
+    display: flex;
+    align-items: center;
   }
 }
 </style>

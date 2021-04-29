@@ -13,7 +13,7 @@
           </router-link>
         </p>
 
-        <table v-if="inboxesList.length" class="woot-table">
+        <table v-if="inboxesList.length" class="woot-table" style="background: aliceblue;border-radius: 10px;">
           <tbody>
             <tr v-for="item in inboxesList" :key="item.id">
               <td>

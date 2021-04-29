@@ -1,5 +1,5 @@
 <template>
-  <div class="settings columns container">
+  <div class="settings columns container" style="background: #b0c4de33;">
     <woot-modal-header
       :header-image="inbox.avatarUrl"
       :header-title="inboxName"
@@ -492,7 +492,6 @@ export default {
 @import '~dashboard/assets/scss/mixins';
 
 .settings {
-  background: $color-white;
 
   .settings--content {
     div:last-child {

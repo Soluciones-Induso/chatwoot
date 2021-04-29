@@ -17,7 +17,7 @@
         <div>
           <div class="result-view">
             <div class="result">
-              Search Results
+              Resultados de la búsqueda:
               <span v-if="resultsCount" class="message-counter">
                 ({{ resultsCount }})
               </span>

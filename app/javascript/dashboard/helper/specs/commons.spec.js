@@ -3,7 +3,7 @@ import { getTypingUsersText, createPendingMessage } from '../commons';
 describe('#getTypingUsersText', () => {
   it('returns the correct text is there is only one typing user', () => {
     expect(getTypingUsersText([{ name: 'Pranav' }])).toEqual(
-      'Pranav is typing'
+      'Pranav está escribiendo'
     );
   });
 
@@ -21,7 +21,7 @@ describe('#getTypingUsersText', () => {
         { name: 'Subin' },
         { name: 'Sojan' },
       ])
-    ).toEqual('Pranav and 3 others are typing');
+    ).toEqual('Pranav Y otros 3 estan escribiendo');
   });
 });
 

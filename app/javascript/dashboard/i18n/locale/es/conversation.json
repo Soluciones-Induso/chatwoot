@@ -108,11 +108,11 @@
     }
   },
   "CONVERSATION_SIDEBAR": {
-    "DETAILS_TITLE": "Conversations Details",
-    "ASSIGNEE_LABEL": "Assigned Agent",
-    "TEAM_LABEL": "Assigned Team",
+    "DETAILS_TITLE": "Detalles de las conversaciones",
+    "ASSIGNEE_LABEL": "Agente asignad@",
+    "TEAM_LABEL": "Equipo asignado",
     "SELECT": {
-      "PLACEHOLDER": "None"
+      "PLACEHOLDER": "Ninguno"
     }
   }
 }

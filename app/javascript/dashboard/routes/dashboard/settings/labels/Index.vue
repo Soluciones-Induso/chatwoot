@@ -19,7 +19,7 @@
           v-if="uiFlags.isFetching"
           :message="$t('LABEL_MGMT.LOADING')"
         />
-        <table v-if="!uiFlags.isFetching && records.length" class="woot-table">
+        <table v-if="!uiFlags.isFetching && records.length" class="woot-table" style="background: aliceblue;border-radius: 10px;">
           <thead>
             <th
               v-for="thHeader in $t('LABEL_MGMT.LIST.TABLE_HEADER')"

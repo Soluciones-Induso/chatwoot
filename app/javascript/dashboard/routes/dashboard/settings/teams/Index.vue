@@ -12,7 +12,7 @@
           </router-link>
         </p>
 
-        <table v-if="teamsList.length" class="woot-table">
+        <table v-if="teamsList.length" class="woot-table" style="background: aliceblue;border-radius: 10px;">
           <tbody>
             <tr v-for="item in teamsList" :key="item.id">
               <td>

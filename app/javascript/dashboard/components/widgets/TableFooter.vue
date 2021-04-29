@@ -157,6 +157,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--space-normal);
+  background: aliceblue;
 }
 .page-meta {
   font-size: var(--font-size-mini);

@@ -4,7 +4,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = conversation
-    subject = "#{@agent.available_name}, A new conversation [ID - #{@conversation.display_id}] has been created in #{@conversation.inbox&.name}."
+    subject = "#{@agent.available_name}, Una nueva conversación [ID - #{@conversation.display_id}] ha sido creado en #{@conversation.inbox&.name}."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -14,7 +14,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = conversation
-    subject = "#{@agent.available_name}, A new conversation [ID - #{@conversation.display_id}] has been assigned to you."
+    subject = "#{@agent.available_name}, Una nueva conversación [ID - #{@conversation.display_id}] te ha sido asignado."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -24,7 +24,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = message.conversation
-    subject = "#{@agent.available_name}, You have been mentioned in conversation [ID - #{@conversation.display_id}]"
+    subject = "#{@agent.available_name}, Te han mencionado en una conversación [ID - #{@conversation.display_id}]"
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end
@@ -36,7 +36,7 @@ class AgentNotifications::ConversationNotificationsMailer < ApplicationMailer
 
     @agent = agent
     @conversation = message.conversation
-    subject = "#{@agent.available_name}, New message in your assigned conversation [ID - #{@conversation.display_id}]."
+    subject = "#{@agent.available_name}, Nuevo mensaje en su conversación asignada [ID - #{@conversation.display_id}]."
     @action_url = app_account_conversation_url(account_id: @conversation.account_id, id: @conversation.display_id)
     send_mail_with_liquid(to: @agent.email, subject: subject) and return
   end

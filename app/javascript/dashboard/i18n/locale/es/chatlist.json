@@ -12,17 +12,17 @@
     },
     "STATUS_TABS": [
       {
-        "NAME": "Abrir",
+        "NAME": "Sin Resolver",
         "KEY": "openCount"
       },
       {
-        "NAME": "Resuelto",
+        "NAME": "Resueltos",
         "KEY": "allConvCount"
       }
     ],
     "ASSIGNEE_TYPE_TABS": [
       {
-        "NAME": "Mina",
+        "NAME": "Tus conversaciones",
         "KEY": "me",
         "COUNT_KEY": "mineCount"
       },
@@ -39,11 +39,11 @@
     ],
     "CHAT_STATUS_ITEMS": [
       {
-        "TEXT": "Abrir",
+        "TEXT": "Sin Resolver",
         "VALUE": "open"
       },
       {
-        "TEXT": "Resuelto",
+        "TEXT": "Resueltos",
         "VALUE": "resolved"
       },
       {

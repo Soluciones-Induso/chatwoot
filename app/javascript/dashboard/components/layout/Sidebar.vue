@@ -1,5 +1,5 @@
 <template>
-  <aside class="sidebar animated shrink columns">
+  <aside class="sidebar animated shrink columns" style="background: aliceblue;">
     <div class="logo">
       <router-link :to="dashboardPath" replace>
         <img :src="globalConfig.logo" :alt="globalConfig.installationName" />
@@ -31,11 +31,11 @@
       </transition-group>
     </div>
 
-    <div class="bottom-nav">
+    <div class="bottom-nav" style="background: lightsteelblue;">
       <availability-status />
     </div>
 
-    <div class="bottom-nav app-context-menu" @click="toggleOptions">
+    <div class="bottom-nav app-context-menu" style="background: lightsteelblue;" @click="toggleOptions">
       <agent-details @show-options="toggleOptions" />
       <notification-bell />
       <span class="current-user--options icon ion-android-more-vertical" />
@@ -253,6 +253,12 @@ export default {
 
 <style lang="scss">
 @import '~dashboard/assets/scss/variables';
+
+.menu .vertical li{
+  background: #dcefff;
+  border-radius: 30px;
+  margin-top: 6px;
+}
 
 .account-selector--modal {
   .modal-container {
