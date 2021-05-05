@@ -45,10 +45,10 @@ es:
       deleted: Este mensaje se ha eliminado
     activity:
       status:
-        resolved: "La conversación fue resuelta por %{user_name}"
+        resolved: "La conversación fue marcada resuelta por %{user_name}"
         open: "La conversación fue reabierta por %{user_name}"
-        bot: "La conversación fue transferida al botón por %{user_name}"
-        auto_resolved: "La conversación fue resuelta por el sistema debido a %{duration} días de inactividad"
+        bot: "La conversación fue transferida al bot por %{user_name}"
+        auto_resolved: "La conversación fue marcada resuelta por el sistema debido a %{duration} días de inactividad"
       assignee:
         self_assigned: "%{user_name} auto-asignado a esta conversación"
         assigned: "Asignado a %{assignee_name} por %{user_name}"

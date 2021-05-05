@@ -10,7 +10,7 @@ describe('#getTypingUsersText', () => {
   it('returns the correct text is there are two typing users', () => {
     expect(
       getTypingUsersText([{ name: 'Pranav' }, { name: 'Nithin' }])
-    ).toEqual('Pranav and Nithin are typing');
+    ).toEqual('Pranav y Nithin están escribiendo');
   });
 
   it('returns the correct text is there are more than two users are typing', () => {
@@ -21,7 +21,7 @@ describe('#getTypingUsersText', () => {
         { name: 'Subin' },
         { name: 'Sojan' },
       ])
-    ).toEqual('Pranav Y otros 3 estan escribiendo');
+    ).toEqual('Pranav y 3 más están escribiendo');
   });
 });
 

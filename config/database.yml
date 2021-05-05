@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  username: postgres
-  password:
+  username: chatwoot
+  password: chatwoot
   database: chatwoot_dev
 
 test:

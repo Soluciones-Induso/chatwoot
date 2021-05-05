@@ -9,7 +9,7 @@
     "SEARCH_MESSAGES": "Buscar mensajes en conversaciones",
     "SEARCH": {
       "TITLE": "Buscar mensajes",
-      "LOADING_MESSAGE": "Cruzando datos...",
+      "LOADING_MESSAGE": "Cargando datos...",
       "PLACEHOLDER": "Escriba cualquier texto para buscar mensajes",
       "NO_MATCHING_RESULTS": "No se han encontrado resultados."
     },
@@ -41,7 +41,7 @@
     },
     "FOOTER": {
       "MSG_INPUT": "Shift + Enter para nueva línea. Comience con '/' para seleccionar una respuesta predefinida.",
-      "PRIVATE_MSG_INPUT": "Mayús + entrar para una nueva línea. Esto será visible sólo para los agentes"
+      "PRIVATE_MSG_INPUT": "Mayús + ENTER para una nueva línea. Esto será visible sólo para los agentes"
     },
     "REPLYBOX": {
       "REPLY": "Responder",
@@ -109,7 +109,7 @@
   },
   "CONVERSATION_SIDEBAR": {
     "DETAILS_TITLE": "Detalles de las conversaciones",
-    "ASSIGNEE_LABEL": "Agente asignad@",
+    "ASSIGNEE_LABEL": "Agente asignado",
     "TEAM_LABEL": "Equipo asignado",
     "SELECT": {
       "PLACEHOLDER": "Ninguno"

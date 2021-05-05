@@ -83,7 +83,7 @@
           <img
             class="gif"
             src="~dashboard/assets/images/typing.gif"
-            alt="Alguien esta escribiendo"
+            alt="Alguien está escribiendo"
           />
         </div>
       </div>

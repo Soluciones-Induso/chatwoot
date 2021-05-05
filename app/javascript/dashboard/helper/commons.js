@@ -17,7 +17,7 @@ export const getTypingUsersText = (users = []) => {
   const count = users.length;
   if (count === 1) {
     const [user] = users;
-    return `${user.name} esta escribiendo`;
+    return `${user.name} está escribiendo`;
   }
 
   if (count === 2) {
@@ -27,7 +27,7 @@ export const getTypingUsersText = (users = []) => {
 
   const [user] = users;
   const rest = users.length - 1;
-  return `${user.name} y ${rest} Otros estan escribiendo`;
+  return `${user.name} y ${rest} más están escribiendo`;
 };
 
 export const createPendingMessage = data => {

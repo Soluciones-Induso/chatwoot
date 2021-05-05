@@ -8,11 +8,11 @@
     },
     "TAB_HEADING": "Conversaciones",
     "SEARCH": {
-      "INPUT": "Búsqueda de Personas, Chats, Respuestas Salvadas .."
+      "INPUT": "Busca Personas, Chats, Respuestas predefinidas .."
     },
     "STATUS_TABS": [
       {
-        "NAME": "Sin Resolver",
+        "NAME": "Abiertos",
         "KEY": "openCount"
       },
       {
@@ -22,7 +22,7 @@
     ],
     "ASSIGNEE_TYPE_TABS": [
       {
-        "NAME": "Tus conversaciones",
+        "NAME": "Mío",
         "KEY": "me",
         "COUNT_KEY": "mineCount"
       },
@@ -39,7 +39,7 @@
     ],
     "CHAT_STATUS_ITEMS": [
       {
-        "TEXT": "Sin Resolver",
+        "TEXT": "Abiertos",
         "VALUE": "open"
       },
       {
@@ -78,8 +78,8 @@
       }
     },
     "RECEIVED_VIA_EMAIL": "Recibido por correo electrónico",
-    "VIEW_TWEET_IN_TWITTER": "Ver trino en Twitter",
-    "REPLY_TO_TWEET": "Responder a éste trino",
+    "VIEW_TWEET_IN_TWITTER": "Ver tweet en Twitter",
+    "REPLY_TO_TWEET": "Responder a éste tweet",
     "NO_MESSAGES": "No hay mensajes"
   }
 }
